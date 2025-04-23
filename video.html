@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Artistry Studio  - YouTube Shorts</title>
+  <style>
+    /* Reset and body styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fff;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+      height: 100vh;
+    }
+
+    /* Container for all videos */
+    .container {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Each video full screen */
+    .video-container {
+      width: 100%;
+      height: 100vh;
+      scroll-snap-align: start;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+      position: relative;
+    }
+
+    /* Styling the iframe (YouTube video) */
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      object-fit: cover;
+    }
+
+    /* Optional: overlay text or logo (Luxury touch) */
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: white;
+      font-size: 1.5em;
+      font-weight: bold;
+      text-shadow: 1px 1px 5px #000;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- Video 1 -->
+  <div class="video-container">
+    <div class="logo">Your Logo</div>
+    <iframe src="https://www.youtube.com/embed/SE7KyU8MuKM?si=NaHuThsSQ1kcFB1Z" allow="autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <!-- Video 2 -->
+  <div class="video-container">
+    <div class="logo">Your Logo</div>
+    <iframe src="https://www.youtube.com/embed/XFkIMUJF6fQ?si=mosRlkif-Sh6SSna" allow="autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <!-- Video 3 -->
+  <div class="video-container">
+    <div class="logo">Bidhan7415</div>
+    <iframe src="https://www.youtube.com/embed/76YHPohEfRI?si=0TMV7e9sadNsQajA" allow="autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <!-- Aise aur bhi videos add kar sakte ho -->
+
+</div>
+
+</body>
+</html>
